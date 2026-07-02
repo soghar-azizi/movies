@@ -18,7 +18,7 @@ export function useMovies(query) {
 
       try {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${key}&s=${searchQuery}`,
+          `https://www.omdbapi.com/?apikey=${key}&s=${searchQuery}`,
         );
 
         const data = await res.json();
